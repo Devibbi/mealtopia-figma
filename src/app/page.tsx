@@ -1,4 +1,3 @@
-import Image from "next/image";
 import MealTopiaHomepage from '@/components/MealTopiaHomepage';
 
 export default function Home() {

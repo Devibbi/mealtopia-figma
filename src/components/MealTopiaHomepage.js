@@ -1,8 +1,10 @@
-import { ArrowRight, Clock, Apple, Heart, DollarSign, Star } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import NavBar from './navbar';
 import NavLink from './NavLink';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
+
 // First, make sure to import these fonts in your _app.js or globals.css:
 // @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
@@ -29,7 +31,7 @@ export default function MealTopiaHomepage() {
         <div className="max-w-7xl mx-auto px-11">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center">
-              <img src="/logo2.png" alt="Logo" className="h-18 mr-4" />
+              <Image src="/logo2.png" alt="Logo" className="h-18 mr-4" width={100} height={100} />
 
               <div className="flex flex-col">
                 <h1 style={{ color: '#663698' }} className="font-bold font-poppins tracking-wide text-4xl">
@@ -65,11 +67,11 @@ export default function MealTopiaHomepage() {
                 with our application.</p>
               <div className="flex flex-col space-y-4 mb-8">
                 <a href="#" className="flex items-center">
-                  <img src="/App Store.png" alt="App Store" className="h-16" />
+                  <Image src="/App Store.png" alt="App Store" className="h-16" width={100} height={100} />
                 </a>
 
                 <a href="#" className="flex items-center">
-                  <img src="/play.png" alt="Google Play" className="h-16" />
+                  <Image src="/play.png" alt="Google Play" className="h-16" width={100} height={100} />
                 </a>
               </div>
 
@@ -98,11 +100,13 @@ export default function MealTopiaHomepage() {
                   className="bg-[#ffffff] border border-[#f2f2f2] rounded-md p-6 flex flex-col gap-3 shadow-[0_4px_6px_0_#1018280D] transition-all duration-300"
                   style={{ minWidth: '380px', minHeight: '200px' }}  // Added to control the column width
                 >
-<div className="w-18 h-18 rounded-full border border-gray-300 bg-white flex items-center justify-center mb-2">
-<img
+                  <div className="w-18 h-18 rounded-full border border-gray-300 bg-white flex items-center justify-center mb-2">
+                    <Image
                       src="/icon.png"
                       alt="Feature Icon"
                       className="w-10 h-10 object-contain"
+                      width={100}
+                      height={100}
                     />
                   </div>
                   <h3 style={{ color: '#663698' }} className="font-poppins text-3xl font-semibold font-poppins text-gray-800">
@@ -160,10 +164,12 @@ export default function MealTopiaHomepage() {
 
           {/* Right Image */}
           <div className="md:w-1/2 p-8 flex justify-center">
-            <img
+            <Image
               src="/Photo.png"
               alt="Chef character"
               className="max-w-sm w-full h-auto"
+              width={100}
+              height={100}
             />
           </div>
         </div>
@@ -179,7 +185,7 @@ export default function MealTopiaHomepage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Article 1 */}
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img src="/Rectangle 1.png" alt="Food" className="w-full h-48 object-cover" />
+                <Image src="/Rectangle 1.png" alt="Food" className="w-full h-48 object-cover" width={100} height={100} />
                 <div className="p-6">
                   <h3 style={{ color: '#412B59' }} className="text-xl font-semibold font-poppins mb-2">Eat Healthy - Everything You Need To Know</h3>
                   <p style={{ color: '#5F6D7E' }} className="mb-4 text-sm font-opensans">Discover the best practices for maintaining a balanced diet and improving your overall health.</p>
@@ -192,7 +198,7 @@ export default function MealTopiaHomepage() {
 
               {/* Article 2 */}
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img src="/Rectangle 1 (1).png" alt="Vegetables" className="w-full h-48 object-cover" />
+                <Image src="/Rectangle 1 (1).png" alt="Vegetables" className="w-full h-48 object-cover" width={100} height={100} />
                 <div className="p-6">
                   <h3 style={{ color: '#412B59' }} className="text-xl font-semibold font-poppins mb-2">Are you eating enough Vegetables?</h3>
                   <p style={{ color: '#5F6D7E' }} className="mb-4 text-sm font-opensans">Learn about the importance of vegetables in your diet and how to incorporate more of them.</p>
@@ -205,7 +211,7 @@ export default function MealTopiaHomepage() {
 
               {/* Article 3 */}
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
-                <img src="/Rectangle 1 (2).png" alt="Cook" className="w-full h-48 object-cover" />
+                <Image src="/Rectangle 1 (2).png" alt="Cook" className="w-full h-48 object-cover" width={100} height={100} />
                 <div className="p-6">
                   <h3 style={{ color: '#412B59' }} className="text-xl font-semibold font-poppins mb-2">Want to prepare health foods quickly?</h3>
                   <p style={{ color: '#5F6D7E' }} className="mb-4 text-sm font-opensans">Time-saving tips and tricks for preparing nutritious meals without spending hours in the kitchen.</p>
@@ -226,10 +232,12 @@ export default function MealTopiaHomepage() {
 
           {/* Logo & Tagline */}
           <div className="flex items-start space-x-4">
-            <img
+            <Image
               src="/logo-footer.bmp"
               alt="Logo"
               className="h-22 self-start -mt-4"  // ⬅ Moves the logo image up slightly
+              width={100}
+              height={100}
             />
             <div>
               <h1 className="font-bold font-poppins tracking-wide text-white text-3xl">
@@ -275,15 +283,15 @@ export default function MealTopiaHomepage() {
                 Get In Touch
               </h4>
               <ul className="space-y-3 text-gray-200 text-sm font-opensans">
-  <li className="flex items-center">
-    <FontAwesomeIcon icon={faPhone} className="mr-2 w-6" />
-    +20 1060228306
-  </li>
-  <li className="flex items-center">
-    <FontAwesomeIcon icon={faEnvelope} className="mr-2 w-6" />
-    info@mealtopia.com
-  </li>
-</ul>
+                <li className="flex items-center">
+                  <FontAwesomeIcon icon={faPhone} className="mr-2 w-6" />
+                  +20 1060228306
+                </li>
+                <li className="flex items-center">
+                  <FontAwesomeIcon icon={faEnvelope} className="mr-2 w-6" />
+                  info@mealtopia.com
+                </li>
+              </ul>
               <div className="flex space-x-4 mt-6">
                 <a href="#" className="text-white hover:text-gray-300 text-xl">
                   <i className="fab fa-facebook-f w-6"></i>
@@ -309,7 +317,7 @@ export default function MealTopiaHomepage() {
         <div className="max-w-7xl mx-auto px-13">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300 text-center">
             <p className="opacity-50 font-opensans mb-2 md:mb-0">
-              © 2022 MEALTOPIA LIFESTYLE CORP. All Rights Reserved.
+              2022 MEALTOPIA LIFESTYLE CORP. All Rights Reserved.
             </p>
             <div className="flex space-x-4">
               <NavLink href="/privacy" label="Privacy Policy" />
