@@ -37,7 +37,7 @@ export default function MealTopiaHomepage() {
                 <h1 style={{ color: '#663698' }} className="font-bold font-poppins tracking-wide text-4xl">
                   <span className='font-light'>Meal</span>Topia
                 </h1>
-                <span className="text-xs ml-3 tracking-wider text-gray-300 font-montserrat">BETTER PEOPLE'S LIVES</span>
+                <span className="text-xs ml-3 tracking-wider text-gray-300 font-montserrat">BETTER PEOPLE&apos;S LIVES</span>
               </div>
             </div>
 
@@ -61,7 +61,7 @@ export default function MealTopiaHomepage() {
               <h1 style={{ color: '#663698' }} className="text-6xl font-bold font-poppins mb-4 tracking-wider"><span className="font-light">Meal</span>Topia</h1>
               <h2 className="text-3xl text-green-500 mb-4 font-semibold font-montserrat tracking-wider">Your Guide to Economic,<p> Healthy Lifestyle</p></h2>
               <p className="text-gray-700 mb-8 font-opensans">
-                Eating healthy can be a challenge in today's fast-<br></br>
+                Eating healthy can be a challenge in today&apos;s fast-<br></br>
                 paced world. However, choosing healthy food<br></br>
                 without overspending is possible, and made easier<br></br>
                 with our application.</p>
@@ -243,9 +243,7 @@ export default function MealTopiaHomepage() {
               <h1 className="font-bold font-poppins tracking-wide text-white text-3xl">
                 <span className="font-light">Meal</span>Topia
               </h1>
-              <span className="text-xs tracking-wider text-gray-200 opacity-60 font-montserrat">
-                BETTER PEOPLE'S LIVES
-              </span>
+              <span className="text-xs tracking-wider text-gray-200 opacity-60 font-montserrat">BETTER PEOPLE&apos;S LIVES</span>
             </div>
           </div>
 
